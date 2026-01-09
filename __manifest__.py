@@ -14,7 +14,7 @@ This module integrates the N-Genius payment gateway by Network International
 into Odoo, enabling merchants to accept card payments securely.
 
 Features:
-- Card payments (Visa, Mastercard, American Express)
+- Card payments (Visa, Mastercard, American Express, etc)
 - 3D Secure (3DS2) authentication with strict ECI validation
 - Sandbox and Production environment support
 - Refund support
@@ -33,10 +33,14 @@ For more information, visit: https://www.network.ae/en/solutions/partners/n-geni
     'author': 'Ashraf',
     'website': 'https://www.ashrf.in',
     'maintainer': 'Ashraf',
-    'support': 'hi@ashrf.in',
+    'support': 'connect@ashrf.in',
     'license': 'LGPL-3',
     'installable': True,
     'application': False,
     'auto_install': False,
-    'images': ['static/description/icon.png'],
+    'images': [
+        'static/description/main_screenshot.png',
+        'static/description/config_screenshot.png',
+        'static/description/checkout_screenshot.png',
+    ],
 }
