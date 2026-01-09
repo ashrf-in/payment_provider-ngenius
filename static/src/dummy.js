@@ -1,1 +1,0 @@
-/* Dummy file to satisfy Odoo asset globbing and prevent NoneType crash if stale records exist. */
