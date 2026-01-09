@@ -30,11 +30,6 @@ For more information, visit: https://www.network.ae/en/solutions/partners/n-geni
         'data/account_payment_method_data.xml',
         'data/payment_provider_data.xml',
     ],
-    'assets': {
-        'web.assets_frontend': [
-            'payment_provider_ngenius/static/src/**/*',
-        ],
-    },
     'author': 'Ashraf',
     'website': 'https://www.ashrf.in',
     'maintainer': 'Ashraf',
