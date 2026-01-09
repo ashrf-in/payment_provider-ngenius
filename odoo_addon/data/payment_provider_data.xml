@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!-- N-Genius Payment Provider -->
+    <record id="payment_provider_ngenius" model="payment.provider">
+        <field name="name">N-Genius</field>
+        <field name="code">ngenius</field>
+        <field name="redirect_form_view_id" ref="payment_provider_ngenius.redirect_form"/>
+        <field name="state">disabled</field>
+        <field name="is_published">False</field>
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+    <!-- Link existing Odoo payment methods to N-Genius provider -->
+    <!-- This references Odoo's built-in payment methods that already have images -->
+    
+    <!-- Card (generic) -->
+    <record id="payment.payment_method_card" model="payment.method">
+        <field name="provider_ids" eval="[(4, ref('payment_provider_ngenius'))]"/>
+    </record>
+
+</odoo>
+
