@@ -17,7 +17,7 @@ A robust payment provider module for Odoo 19 that integrates **N-Genius** paymen
 
 ## Installation
 
-1. Copy the `payment_ni_ngenius` folder to your Odoo addons directory
+1. Copy the `payment_provider_ngenius` folder to your Odoo addons directory
 2. Update the app list: **Apps → Update Apps List**
 3. Install the module: Search for "N-Genius" and click **Install**
 

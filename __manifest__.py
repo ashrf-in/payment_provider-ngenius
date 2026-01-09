@@ -32,7 +32,7 @@ For more information, visit: https://www.network.ae/en/solutions/partners/n-geni
     ],
     'assets': {
         'web.assets_frontend': [
-            'payment_ni_ngenius/static/src/**/*',
+            'payment_provider_ngenius/static/src/**/*',
         ],
     },
     'author': 'Ashraf',

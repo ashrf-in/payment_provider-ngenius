@@ -8,9 +8,9 @@ from odoo.exceptions import UserError, ValidationError
 
 from odoo.addons.payment import utils as payment_utils
 from odoo.addons.payment.logging import get_payment_logger
-from odoo.addons.payment_ni_ngenius import const
-from odoo.addons.payment_ni_ngenius import utils as ngenius_utils
-from odoo.addons.payment_ni_ngenius.controllers.main import NGeniusController
+from odoo.addons.payment_provider_ngenius import const
+from odoo.addons.payment_provider_ngenius import utils as ngenius_utils
+from odoo.addons.payment_provider_ngenius.controllers.main import NGeniusController
 
 _logger = get_payment_logger(__name__, const.SENSITIVE_KEYS)
 

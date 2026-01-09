@@ -17,10 +17,6 @@ REFUND_ENDPOINT = '/transactions/outlets/{outlet_ref}/orders/{order_ref}/payment
 DEFAULT_PAYMENT_METHOD_CODES = {
     # Primary payment methods.
     'card',
-    # Brand payment methods.
-    'visa',
-    'mastercard',
-    'amex',
 }
 
 # Mapping of transaction states to N-Genius payment states.
