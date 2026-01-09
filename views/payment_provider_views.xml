@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="payment_provider_form_ngenius" model="ir.ui.view">
+        <field name="name">payment.provider.form.ngenius</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='provider_credentials']" position="before">
+                <div class="alert alert-info" role="alert"
+                     invisible="code != 'ngenius' or state == 'disabled'">
+                    <strong>N-Genius Configuration:</strong>
+                    <ul class="mb-0">
+                        <li>Log in to the <a href="https://portal.ngenius-payments.com" target="_blank">N-Genius Portal</a>
+                            (or <a href="https://portal.sandbox.ngenius-payments.com" target="_blank">Sandbox Portal</a> for testing)</li>
+                        <li>Navigate to <strong>Settings → Integration → Service Accounts</strong> to get your API Key</li>
+                        <li>Navigate to <strong>Settings → Organizational Hierarchy</strong> to find your Outlet Reference</li>
+                    </ul>
+                </div>
+            </xpath>
+            <xpath expr="//group[@name='provider_credentials']" position="inside">
+                <group invisible="code != 'ngenius'">
+                    <field name="ngenius_api_key" 
+                           string="API Key"
+                           password="True"
+                           required="code == 'ngenius' and state != 'disabled'"
+                           placeholder="Your N-Genius Service Account API Key"/>
+                    <field name="ngenius_outlet_ref" 
+                           string="Outlet Reference"
+                           required="code == 'ngenius' and state != 'disabled'"
+                           placeholder="e.g., 12345678-1234-1234-1234-123456789012"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
